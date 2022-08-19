@@ -1,0 +1,32 @@
+.features__section {
+  background-color: $off-white;
+  margin: 40px 0;
+  .container {
+    padding: 100px 0;
+    .features__head {
+      text-align: center;
+      h1 span {
+        color: $green;
+      }
+      p {
+        max-width: 660px;
+        margin: auto;
+        padding: 20px 0;
+      }
+    }
+    .features__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 400px);
+      margin-top: 60px;
+      justify-content: center;
+      gap: 30px;
+      @media screen and (max-width: 1600px) {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      }
+    }
+    button {
+      margin: 60px auto 0 auto;
+      padding: 17px 25px;
+    }
+  }
+}
